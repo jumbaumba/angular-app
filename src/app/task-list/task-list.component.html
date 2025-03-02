@@ -1,0 +1,29 @@
+<div>
+    <h2>To-Do List</h2>
+    <form (submit)="addTask()" class="form">
+        <input 
+          type="text" 
+          name="taskName" 
+          class="form__input"
+          [(ngModel)]="taskName"
+          placeholder="Add a new task" 
+          required 
+          />
+        <button type="submit" class="form__button">Add Task</button>
+    </form>
+  
+    <ul>
+      <li *ngFor="let task of tasks">
+        <input type="checkbox" [(ngModel)]="task.completed" />
+        {{ task.name }}
+      </li>
+    </ul>
+  
+    <button 
+      (click)="deleteCompletedTasks()"
+      class="button"
+      [ngClass]="{'_disabled': isAllTasksIsComplete }"
+      [disabled]="isAllTasksIsComplete">
+        Delete Completed Tasks
+    </button>
+  </div>
