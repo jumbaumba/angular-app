@@ -8,6 +8,7 @@ interface Task {
   completed: boolean;
 }
 
+
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
