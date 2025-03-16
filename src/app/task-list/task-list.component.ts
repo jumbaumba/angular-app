@@ -11,8 +11,8 @@ interface Task {
 
 @Component({
   selector: 'app-todo-list',
-  templateUrl: './todo-list.component.html',
-  styleUrls: ['./todo-list.component.scss'],
+  templateUrl: './task-list.component.html',//todo-list не существует в папке с компонентом
+  styleUrls: ['./task-list.component.scss'],//todo-list не существует в папке с компонентом
   imports: [NgFor, FormsModule, NgClass],
   standalone: true, // Set standalone to true
 })
