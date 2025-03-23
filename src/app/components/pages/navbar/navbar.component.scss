@@ -1,0 +1,16 @@
+.navbar{
+    background-color: black;
+    padding: 30px;
+
+    &_list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &_item{
+        list-style: none;
+        color: #fff;
+    }
+}
